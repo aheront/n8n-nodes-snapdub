@@ -1,0 +1,14 @@
+{
+	"node": "n8n-nodes-snapdub.snapDub",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content", "Productivity"],
+	"resources": {
+		"credentialDocumentation": [
+			{ "url": "https://snapdub.ai/developers/api" }
+		],
+		"primaryDocumentation": [
+			{ "url": "https://github.com/aheront/n8n-nodes-snapdub#readme" }
+		]
+	}
+}

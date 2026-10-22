@@ -1,0 +1,59 @@
+{
+	"name": "n8n-nodes-snapdub",
+	"version": "0.1.0",
+	"description": "n8n nodes for SnapDub: turn long videos into vertical clips with captions, then schedule and post them to TikTok, YouTube and Instagram.",
+	"license": "MIT",
+	"homepage": "https://snapdub.ai/developers",
+	"keywords": [
+		"n8n-community-node-package",
+		"snapdub",
+		"video",
+		"clips",
+		"shorts",
+		"tiktok",
+		"youtube",
+		"instagram",
+		"captions"
+	],
+	"author": {
+		"name": "SnapDub",
+		"email": "hello@snapdub.ai"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aheront/n8n-nodes-snapdub.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/SnapDubApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/SnapDub/SnapDub.node.js",
+			"dist/nodes/SnapDubTrigger/SnapDubTrigger.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.39.4",
+		"prettier": "3.8.3",
+		"release-it": "20.2.0",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
