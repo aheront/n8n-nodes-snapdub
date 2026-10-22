@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-snapdub",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n nodes for SnapDub: turn long videos into vertical clips with captions, then schedule and post them to TikTok, YouTube and Instagram.",
 	"license": "MIT",
 	"homepage": "https://snapdub.ai/developers",
@@ -17,7 +17,7 @@
 	],
 	"author": {
 		"name": "SnapDub",
-		"email": "hello@snapdub.ai"
+		"email": "aheronth@gmail.com"
 	},
 	"repository": {
 		"type": "git",
